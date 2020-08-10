@@ -66,3 +66,14 @@ include <Dictionary_NewBraille.scad>;
 ```
 
 And use as usual
+
+# Contribution and Atribution
+- Original Braille to OpenScad code from Tim Heilers [github](https://github.com/taheilers/Braille)
+- Extended functionalities, string converter and dictionary Axel Sepúlveda 
+- String converter recursive function inspired by Nathanaël Jourdane OpenScad string library https://www.thingiverse.com/thing:1237203
+- Any contribution is welcome
+
+
+# License
+- Extended functionalities licensed under GPLv3
+ 
