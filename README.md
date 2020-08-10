@@ -31,23 +31,23 @@ Use tray(row, [Braille Vector array]) function to create Braille tiles from a Br
 
 ## Convert a string to a Braille Vector array
 As creating a Braille Vector array manually from a string is time consuming, the function str2vectordict(string) converts directly a string to a Braille Vector array, so you can do: 
-'''
+´´´
 tray(0, str2vectordict("HELLO WORLD"));
-'''
+´´´
 
 ## Example using original Dictionary.scad
 With the original dictionary, the input can have two forms: [char-like vector array] or a string
 Example: write "hello world" in column 0: 
-'''
+´´´
 tray(0, [h,e,l,l,o,space,w,o,r,l,d]);
-'''
+´´´
 
 Note: the previous example, the chars are actually single letter vector names defined in the dictionary (i.e. don't use quotes ' or double quotes " )
 
 The other way, with string 
-'''
+´´´
 tray(0, str2vectordict("hello world"));
-'''
+´´´
 
 Note: Original dictionary uses lowercase
 
@@ -55,13 +55,13 @@ Note: Original dictionary uses lowercase
 # Add/use other dictionary
 copy and rename file Dictionary_BrailleASCII.scad and edit accordingly to your desired dictionary, eg. Dictionary_NewBraille.scad
 Then, in Example.scad change the line:
-'''
+´´´
 include <Dictionary_BrailleASCII.scad>; 
-'''
+´´´
 
 to 
-'''
+´´´
 include <Dictionary_NewBraille.scad>; 
-'''
+´´´
 
 And use as usual
