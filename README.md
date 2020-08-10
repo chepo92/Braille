@@ -27,7 +27,7 @@ As usual with OpenScad, Press F5 to generate render preview or F6 to generate th
 
 # Documentation
 
-Use tray(row, [Braille Vector array]) function to create Braille tiles from a Braille Vector array
+Use `tray(row, [Braille Vector array])` function to create Braille tiles from a Braille Vector array
 
 ## Convert a string to a Braille Vector array
 As creating a Braille Vector array manually from a string is time consuming, the function str2vectordict(string) converts directly a string to a Braille Vector array, so you can do: 
