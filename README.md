@@ -9,16 +9,16 @@ Currently uses 6 dot Braille standard, can be easily added another (like 8 dots)
 - Basic: a-z, space, num, dash, shift (original)
 
 # Usage
-'''
+```C
 tray(row, str2vectordict("YOUR TEXT"));
-'''
+```
 Will create a single row Braille tile containing "YOUR TEXT"
 
 
-'''
+```C
 tray(0, str2vectordict("HELLO"));
 tray(1, str2vectordict("WORLD"));
-'''
+```
 Will create a 2 rows Braille tile containning "HELLO" in the first row and "WORLD" in the second
 
 Note: default Braille ASCII dictionary uses uppercase letters (by standard)
