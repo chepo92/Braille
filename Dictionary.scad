@@ -31,8 +31,27 @@ w = [0,1,0,1,1,1];
 x = [1,0,1,1,0,1];
 y = [1,0,1,1,1,1];
 z = [1,0,1,0,1,1];
+
+//// 
+letters = [
+a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
+];
+
 shift = [0,0,0,0,0,1];
 prime = [0,0,1,0,0,0];
 num = [0,0,1,1,1,1];
 dash = [0,1,0,0,1,0];
 space = [0,0,0,0,0,0];
+
+function char2dict(str) =
+	ord(str) >= 97 && ord(str) <= 97+25  ? letters[ord(str)-97] :
+    ord(str) == ord(" ") ? space : 
+    ord(str) == ord("'") ? prime : 
+    ord(str) == ord("#") ? num : 
+    ord(str) == ord("-") ? dash : 
+    ord(str) == ord("-") ? dash : 
+	echo("not a letter");
+
+function str2vectordict(str, v=[], i=0) =
+	i == len(str) ? v :
+	str2vectordict(str, concat(v, [char2dict(str[i])]), i+1);
