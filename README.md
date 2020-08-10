@@ -6,6 +6,9 @@ Open example.scad
 
 Use tray(column, [char array text]) funcion to create Braille tiles
 
-Example, write hello world in column 0: 
+Example: write hello world in column 0: 
+
 tray(0, [h,e,l,l,o,space,w,o,r,l,d]);
+
+Press F5 to generate render preview or F6 to generate the 3D object
 
