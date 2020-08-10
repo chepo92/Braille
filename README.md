@@ -37,6 +37,7 @@ tray(0, str2vectordict("HELLO WORLD"));
 
 ## Example using original Dictionary.scad
 With the original dictionary, the input can have two forms: [char-like vector array] or a string
+
 Example: write "hello world" in column 0: 
 ```C
 tray(0, [h,e,l,l,o,space,w,o,r,l,d]);
